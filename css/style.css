@@ -1,6 +1,15 @@
+body{
+    background: rgb(245, 244, 244);
+}
 /*Navigartion and logo*/
 header{
-    height: 50px;
+    height: auto;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background:rgb(245, 244, 244);
+    margin: 0;
+    top: 0;
 }
 #logo{
     height: 40px;
@@ -9,10 +18,10 @@ header{
     margin: 7px;
 }
 nav{
-    display: inline;
     float: right;
     height: 40px;
     margin-top: 15px;
+    overflow: hidden;
 }
 nav a{
     text-decoration: none;
@@ -23,7 +32,8 @@ nav a{
 }
 
 main{
-    max-width: 700px;
+    padding-top: 50px;
+    max-width: 1050px;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -36,4 +46,97 @@ main{
 #email{
     padding: 6px;
     width: 40%;
+}
+#submit{
+    background: rgb(230, 188, 3);
+    padding: 5px;
+    margin: 15px;
+    font-weight: 800;
+    font-size: 15px;
+}
+/* section 1*/
+i{
+    margin: auto;
+    align-content: center;
+}
+#icons{
+    padding-top:50px ;
+    display: grid;
+    grid-template-columns: 15% 75%;
+    grid-gap: 40px 20px;
+}
+#fire, #battery{
+    font-size: 55px;
+    color: orange;
+}
+#truck{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    font-size: 60px;
+    color: orange;
+}
+.section-text{
+    text-align: left;
+    line-height: 0;
+}
+.section-text h3{
+    font-size: 24px;
+    line-height: 0%;
+    margin: 0;
+    margin-top: 20px;
+}
+.section-text p{
+    line-height: normal;
+    font-size: 17px;
+    margin-top: 10px;
+}
+/*Section 2*/
+#store{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 4%;
+}
+.prices{
+    border: 1px solid black;
+}
+.prices h5{
+    background: gainsboro;
+    font-size: 18px;
+    padding: 15px;
+    margin: 0;
+}
+.prices h4{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px;
+}
+.select{
+    background: rgb(228, 206, 4);
+    padding: 8px;
+    margin: 10px;
+    font-size: 18px;
+    width: 35%;
+    border: none;
+    transition: background 1s ease;
+}
+.select:hover{
+    background: rgb(224, 148, 5);
+}
+/*Footer*/
+footer{
+    background-color: gainsboro;
+    text-align: right;
+    width: 100%;
+    padding: 20px;
+    font-size: 17px;
+}
+footer a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer p{
+    margin: 5px;
+    color: gray;
 }
