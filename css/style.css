@@ -11,23 +11,26 @@ header{
     margin: 0;
     top: 0;
 }
-#logo{
+#header-img{
     height: 40px;
     width: auto;
     float: left;
     margin: 7px;
 }
 nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-around;
     float: right;
-    height: 40px;
+    width: 40%;
+    padding: 8px;
     margin-top: 15px;
-    overflow: hidden;
 }
 nav a{
+    display: block;
+    position: relative;
     text-decoration: none;
-    font-size: 19px;
-    margin-left: 80px;
-    margin-right: 80px;
+    font-size: 18px;
     color: black;
 }
 
@@ -92,12 +95,16 @@ i{
 }
 /*Section 2*/
 #store{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-gap: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
 }
 .prices{
     border: 1px solid black;
+    min-width: 250px;
+    width: 32%;
+    margin-top: 3%;
 }
 .prices h5{
     background: gainsboro;
@@ -139,4 +146,36 @@ footer a{
 footer p{
     margin: 5px;
     color: gray;
+}
+@media (max-width:650px){
+    #header-img,nav{
+        float:none;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    main{
+        padding-top: 120px;
+    }
+    #icons{
+        grid-template-columns: 100%;
+    }
+    .section-text{
+        text-align: center;
+    }
+    #icons i{
+        display: none;
+    }
+    nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 0%;
+    }
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: space-around;
+    }
 }
